@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%- include('partials/head') %>
+
+    <title><%= title %></title>
+</head>
+<body>
+
+<%- include('partials/navigation') %>
+
+<div class="container">
+    <div class="title">
+        <p>Registro Nuevo</p>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <img src="assets/blank-profile-picture-g258846214_640.png" alt="profile_pic"
+                 style="height: 125px; margin: 18px">
+        </div>
+        <div class="col-9">
+            <form method="POST" action="/adduser">
+                <div class="row row-1">
+                    <div class="col-4">
+                        <label for="nombreCompleto">Nombre Completo</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="nombreCompleto" id="nombreCompleto" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-2">
+                    <div class="col-4">
+                        <label for="descripcion">Descripción</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="descripcion" id="descripcion" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-3">
+                    <div class="col-4">
+                        <label for="empresa">Empresa</label>
+                    </div>
+                    <div class="col-8">
+                        <select name="empresa" id="empresa" class="form-select">
+                            <option value="0">Seleccione una empresa</option>
+                            <option value="1">Empresa 1</option>
+                            <option value="2">Empresa 2</option>
+                            <option value="3">Empresa 3</option>
+                            <option value="4">Empresa 4</option>
+                            <option value="5">Empresa 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row row-4">
+                    <div class="col-4">
+                        <label for="ine">INE</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="ine" id="ine" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-5">
+                    <div class="col-4">
+                        <label for="curp">CURP</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="curp" id="curp" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-20">
+                    <div class="col-4">
+                        <label for="rfc">RFC</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="rfc" id="rfc" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-6">
+                    <div class="col-4">
+                        <label for="nss">Número Seguro Social</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="nss" id="nss" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-7">
+                    <div class="col-4">
+                        <label for="tipoSangre">Tipo Sangre</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="nss" id="tipoSangre" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-8">
+                    <div class="col-4">
+                        <label for="licenciaManejo">Licencia Manejo</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="licenciaManejo" id="licenciaManejo" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-9">
+                    <div class="col-4">
+                        <label for="tipoLicencia">Tipo Licencia</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="tipoLicencia" id="tipoLicencia" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-9">
+                    <div class="col-4">
+                        <label for="vigenciaLicencia">Vigencia Licencia</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="vigenciaLicencia" id="vigenciaLicencia" class="form-control">
+                    </div>
+                </div>
+                <div class="row row-10">
+                    <div class="col-4">
+                        <label for="telefono">Telefono</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="telefono" id="telefono" class="form-control">
+                    </div>
+                </div>
+                <!--
+                <div class="row row-11">
+                    <div class="col-4">
+                        <label for="fotoChofer">Foto Chofer</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="fotoChofer">
+                    </div>
+                </div>
+                <div class="row row-12">
+                    <div class="col-4">
+                        <label for="numeroCredencial">Número de Credencial</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="numeroCredencial">
+                    </div>
+                </div>
+                <div class="row row-13">
+                    <div class="col-4">
+                        <label for="identidad">Identidad</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="identidad">
+                    </div>
+                </div>
+                <div class="row row-14">
+                    <div class="col-4">
+                        <label for="habilitado">Habilitado</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="habilitado">
+                    </div>
+                </div>
+                <div class="row row-15">
+                    <div class="col-4">
+                        <label for="entregada">Entregada</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="entregada">
+                    </div>
+                </div>
+                <div class="row row-16">
+                    <div class="col-4">
+                        <label for="fechaEntrega">Fecha Entrega</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="fechaEntrega">
+                    </div>
+                </div>
+                <div class="row row-17">
+                    <div class="col-4">
+                        <label for="cuentaCorreo">Cuenta Correo</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="cuentaCorreo">
+                    </div>
+                </div>
+                <div class="row row-18">
+                    <div class="col-4">
+                        <label for="contrasena">Contraseña</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="contrasena">
+                    </div>
+                </div>
+                <div class="row row-19">
+                    <div class="col-4">
+                        <label for="expediente">Expediente</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="expediente">
+                    </div>
+                </div>
+                -->
+                <div class="row row-21">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-8" style="justify-content: right">
+                        <input type="submit" class="btn btn-primary" value="Guardar">
+                        <button class="btn btn-danger">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
