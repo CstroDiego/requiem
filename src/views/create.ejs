@@ -19,33 +19,33 @@
     </div>
     <div class="row">
         <div class="col-2">
-            <img src="assets/blank-profile-picture-g258846214_640.png" alt="profile_pic"
+            <img src="src/public/assets/blank-profile-picture-g258846214_640.png" alt="profile_pic"
                  style="height: 125px; margin: 18px">
         </div>
         <div class="col-9">
-            <form method="POST" action="/adduser">
+            <form action="/adduser" method="POST">
                 <div class="row row-1">
                     <div class="col-4">
-                        <label for="nombreCompleto">Nombre Completo</label>
+                        <label for="txtNombre">Nombre Completo</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="nombreCompleto" id="nombreCompleto" class="form-control">
+                        <input type="text" name="txtNombre" id="txtNombre" class="form-control">
                     </div>
                 </div>
                 <div class="row row-2">
                     <div class="col-4">
-                        <label for="descripcion">Descripción</label>
+                        <label for="txtDescripcion">Descripción</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="descripcion" id="descripcion" class="form-control">
+                        <input type="text" name="txtDescripcion" id="txtDescripcion" class="form-control">
                     </div>
                 </div>
                 <div class="row row-3">
                     <div class="col-4">
-                        <label for="empresa">Empresa</label>
+                        <label for="txtEmpresa">Empresa</label>
                     </div>
                     <div class="col-8">
-                        <select name="empresa" id="empresa" class="form-select">
+                        <select name="txtEmpresa" id="txtEmpresa" class="form-select">
                             <option value="0">Seleccione una empresa</option>
                             <option value="1">Empresa 1</option>
                             <option value="2">Empresa 2</option>
@@ -57,74 +57,74 @@
                 </div>
                 <div class="row row-4">
                     <div class="col-4">
-                        <label for="ine">INE</label>
+                        <label for="txtIne">INE</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="ine" id="ine" class="form-control">
+                        <input type="text" name="txtIne" id="txtIne" class="form-control">
                     </div>
                 </div>
                 <div class="row row-5">
                     <div class="col-4">
-                        <label for="curp">CURP</label>
+                        <label for="txtCurp">CURP</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="curp" id="curp" class="form-control">
+                        <input type="text" name="txtCurp" id="txtCurp" class="form-control">
                     </div>
                 </div>
                 <div class="row row-20">
                     <div class="col-4">
-                        <label for="rfc">RFC</label>
+                        <label for="txtRfc">RFC</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="rfc" id="rfc" class="form-control">
+                        <input type="text" name="txtRfc" id="txtRfc" class="form-control">
                     </div>
                 </div>
                 <div class="row row-6">
                     <div class="col-4">
-                        <label for="nss">Número Seguro Social</label>
+                        <label for="txtNss">Número Seguro Social</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="nss" id="nss" class="form-control">
+                        <input type="text" name="txtNss" id="txtNss" class="form-control">
                     </div>
                 </div>
                 <div class="row row-7">
                     <div class="col-4">
-                        <label for="tipoSangre">Tipo Sangre</label>
+                        <label for="txtTipoSangre">Tipo Sangre</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="nss" id="tipoSangre" class="form-control">
+                        <input type="text" name="txtTipoSangre" id="txtTipoSangre" class="form-control">
                     </div>
                 </div>
                 <div class="row row-8">
                     <div class="col-4">
-                        <label for="licenciaManejo">Licencia Manejo</label>
+                        <label for="txtLicenciaManejo">Licencia Manejo</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="licenciaManejo" id="licenciaManejo" class="form-control">
+                        <input type="text" name="txtLicenciaManejo" id="txtLicenciaManejo" class="form-control">
                     </div>
                 </div>
                 <div class="row row-9">
                     <div class="col-4">
-                        <label for="tipoLicencia">Tipo Licencia</label>
+                        <label for="txtTipoLicencia">Tipo Licencia</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="tipoLicencia" id="tipoLicencia" class="form-control">
+                        <input type="text" name="txtTipoLicencia" id="txtTipoLicencia" class="form-control">
                     </div>
                 </div>
                 <div class="row row-9">
                     <div class="col-4">
-                        <label for="vigenciaLicencia">Vigencia Licencia</label>
+                        <label for="txtVigenciaLicencia">Vigencia Licencia</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="vigenciaLicencia" id="vigenciaLicencia" class="form-control">
+                        <input type="text" name="txtVigenciaLicencia" id="txtVigenciaLicencia" class="form-control">
                     </div>
                 </div>
                 <div class="row row-10">
                     <div class="col-4">
-                        <label for="telefono">Telefono</label>
+                        <label for="txtTelefono">Telefono</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" name="telefono" id="telefono" class="form-control">
+                        <input type="text" name="txtTelefono" id="txtTelefono" class="form-control">
                     </div>
                 </div>
                 <!--
@@ -206,10 +206,12 @@
 
                     </div>
                     <div class="col-8" style="justify-content: right">
-                        <input type="submit" class="btn btn-primary" value="Guardar">
-                        <button class="btn btn-danger">Cancelar</button>
+
                     </div>
+
                 </div>
+                <button class="btn btn-primary" type="submit" name="btnCrear" id="btnCrear" value="crear">Crear</button>
+                <button class="btn btn-danger">Cancelar</button>
             </form>
         </div>
     </div>
